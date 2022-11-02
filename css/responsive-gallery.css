@@ -1,0 +1,16 @@
+body{
+    margin-top: 0;
+    background-color: black;
+}
+#header-container{
+    background-color: brown;
+}
+h1{
+    color: white;
+    font-size: 62px;
+}
+p{
+    color: white;
+    font-size: 32px;
+    line-height: 5px;
+}

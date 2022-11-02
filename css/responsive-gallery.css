@@ -1,16 +1,113 @@
-body{
+body {
     margin-top: 0;
     background-color: black;
 }
-#header-container{
+
+#header-container {
     background-color: brown;
+    width: 1280px;
+    height: 400px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
 }
-h1{
-    color: white;
-    font-size: 62px;
+
+#more-info-container {
+    background-color: blueviolet;
+    width: 1280px;
+    height: 400px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
 }
-p{
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   /* background-color: blue;
+    width: 1280px;
+    height: 1000px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;*/
+}
+
+.gallery-container .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-item img{
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
+}
+
+#gallery-header {
+    background-color: blue;
+    width: 1280px;
+    height: 100px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+h1 {
     color: white;
-    font-size: 32px;
-    line-height: 5px;
+    font-size: 80px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 50;
+    line-height: 50px;
+
+}
+
+h2 {
+    color: white;
+    line-height: 36px;
+    font-size: 25px;
+    font-weight: 25;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h3 {
+    color: white;
+    font-size: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p {
+    color: white;
+    line-height: 30px;
+    font-size: 22px;
+    font-weight: 25;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    column-count: 2;
+    column-gap: 40px;
+
+}
+
+.row {
+    /*all images next to each other in line*/
+    display: flex;
+    flex-direction: row;
+    /*images wrap in the available space inside container*/
+    padding: 0 4px;
+}
+
+.column {
+    flex: 1 1 2;
+    max-width: 1 1 2;
+}
+
+.column img {
+    /*width 100% fixed the issue of overlaping images and shrunk them to fit into their column*/
+    height: auto;
+    width: 100%;
 }
